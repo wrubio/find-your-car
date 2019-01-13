@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: #F2F3F4 !important;
 }
 
 header {
@@ -16,7 +17,60 @@ header {
 /* General Colors Styles */
 
 .tc-white {
-    color: #FFFFFF;
+    color: #FFFFFF !important;
+}
+
+
+/* General Font size style */
+
+.ts-9 {
+    font-size: 3.052em;
+}
+
+.ts-8 {
+    font-size: 2.441em;
+}
+
+.ts-7 {
+    font-size: 1.953em;
+}
+
+
+/* General Font size weight */
+
+.tw-bolder {
+    font-weight: 900 !important;
+}
+
+.tw-bold {
+    font-weight: 700 !important;
+}
+
+.tw-medium {
+    font-weight: 500 !important;
+}
+
+.tw-regular {
+    font-weight: 400 !important;
+}
+
+.tw-light {
+    font-weight: 300 !important;
+}
+
+.tw-thin {
+    font-weight: 100 !important;
+}
+
+
+/* General background Colors Styles */
+
+.bgc-red {
+    background-color: #E0202C !important;
+}
+
+.bgc-black {
+    background-color: #000000 !important;
 }
 
 

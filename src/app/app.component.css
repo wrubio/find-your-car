@@ -6,3 +6,8 @@
     width: calc(100% - 50px);
     height: 100px;
 }
+
+#main-container {
+    padding: 25px;
+    margin-top: 50px;
+}
