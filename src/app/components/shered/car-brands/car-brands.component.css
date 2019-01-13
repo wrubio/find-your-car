@@ -1,0 +1,22 @@
+.car-brand-container {
+    position: relative;
+    width: 100%;
+}
+
+.car-brand {
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+.car-brand-text {
+    width: 100%;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin: 0 auto;
+    padding: 8px 0;
+    font-size: 1em;
+}

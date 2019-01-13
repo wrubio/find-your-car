@@ -1,0 +1,8 @@
+.car-brands {
+    position: absolute;
+    bottom: -75px;
+    width: -moz-calc(100% - 50px);
+    width: -webkit-calc(100% - 50px);
+    width: calc(100% - 50px);
+    height: 100px;
+}

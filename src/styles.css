@@ -1,1 +1,68 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    width: 100%;
+    height: 420px;
+    background-color: #E0202C;
+    position: relative;
+    padding: 25px;
+}
+
+
+/* General Colors Styles */
+
+.tc-white {
+    color: #FFFFFF;
+}
+
+
+/* ==========================================================================================
+    Responsive breakpoints 
+*/
+
+
+/* Extra small devices (portrait phones, less than 576px) */
+
+.car-brand-container {
+    display: none;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+
+@media (min-width: 576px) {
+    .car-brand-container {
+        display: none;
+    }
+}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) {
+    .car-brand-container {
+        display: block;
+    }
+}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) {
+    .car-brand-container {
+        display: block;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .car-brand-container {
+        display: block;
+    }
+}
