@@ -8,7 +8,7 @@ import { ActivatedRoute } from '@angular/router';
   styleUrls: ['./car.component.css']
 })
 export class CarComponent implements OnInit {
-
+  // Initial variables
   cars: any[];
   car = {
     id: 12,
@@ -33,6 +33,8 @@ export class CarComponent implements OnInit {
   };
 
   constructor(private _carsService: CarsService, private actRoute: ActivatedRoute ) {
+    // ======================================================================
+    // Consumes the service to get the cars data  in the data file
     this._carsService.getCars().subscribe( (result: any)  => {
       this.cars = result.cars;
       this.actRoute.params.subscribe( params => {

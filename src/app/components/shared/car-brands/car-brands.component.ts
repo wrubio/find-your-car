@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./car-brands.component.css']
 })
 export class CarBrandsComponent implements OnInit {
-
+  // =====================================================================================
+  // Arrays with the currently brand cars to show in the header of application
   brands: string[] = ['BMW', 'Audi', 'Chevrolet', 'Nissan', 'Ford', 'Mazda'];
 
   constructor() { }

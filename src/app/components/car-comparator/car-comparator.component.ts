@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
   styleUrls: ['./car-comparator.component.css']
 })
 export class CarComparatorComponent implements OnInit {
-
+  // Initial variables
   compare: boolean;
   alert: boolean;
   constructor(private router: Router) {
@@ -18,6 +18,8 @@ export class CarComparatorComponent implements OnInit {
   ngOnInit() {
   }
 
+  // =================================================================================================
+  // method that updates the selected value of the dropdown to obtain the data of the car to consult
   showSelected() {
     const modelSelectors = Array.prototype.slice.apply(document.querySelectorAll('.dropdown-model'));
     let modelCount = 0;
@@ -36,6 +38,8 @@ export class CarComparatorComponent implements OnInit {
     }
   }
 
+  // ================================================================
+  // Reset or reload the comparator component
   reloadComponent() {
     this.router.navigateByUrl('home', {skipLocationChange: true}).then( () => this.router.navigate(['comparator']));
   }

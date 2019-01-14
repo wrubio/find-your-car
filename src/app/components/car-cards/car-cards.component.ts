@@ -14,6 +14,8 @@ export class CarCardsComponent implements OnInit {
 
   ngOnInit() {}
 
+  // =========================================================================
+  // method that allows sending parameters to the assigned route ('/car')
   showCarInformation(id: number) {
     this.router.navigate(['/car', id]);
   }

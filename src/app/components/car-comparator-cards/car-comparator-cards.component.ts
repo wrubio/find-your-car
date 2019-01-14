@@ -10,11 +10,13 @@ import { CarsService } from '../../services/cars.service';
 export class CarComparatorCardsComponent implements OnInit {
 
   @Input('clicked')
-
+  
+  // gets the updated assigned value of the parent component to show or not comparisons of the cars
   set data(clicked: any) {
     this.showInformation = clicked;
   }
 
+  // Initial variables
   showInformation: boolean;
   brands: String[] = [ 'BMW', 'Audi', 'Chevrolet', 'Nissan', 'Ford', 'Mazda' ];
   models: string[] = [];
@@ -41,6 +43,7 @@ export class CarComparatorCardsComponent implements OnInit {
         alarm: ''
     }
   }];
+
   constructor(private _carsService: CarsService) {}
 
   ngOnInit() {}
@@ -49,8 +52,9 @@ export class CarComparatorCardsComponent implements OnInit {
   getCarsModel(selected: any, carBrand: any) {
     carBrand.innerHTML = selected.innerHTML;
     const brand: string = selected.innerHTML.toLowerCase();
+    // ======================================================================
+    // Consumes the service to get the cars data  in the data file
     this._carsService.getCars().subscribe( (result: any)  => {
-      console.log(result);
       this.cars = result.cars;
       this.models = [];
           this.newCars = [];

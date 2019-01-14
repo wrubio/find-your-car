@@ -13,8 +13,10 @@ export class CarInputEventComponent implements OnInit {
   ngOnInit() {
   }
 
+  // ======================================================================
+  // Click event methods  to redirect to the comparator and home component
   showComparator() {
-    this.router.navigate(['comparator']);
+    this.router.navigate(['/comparator']);
   }
 
   findBrand( term: string) {

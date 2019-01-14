@@ -13,6 +13,8 @@ export class HomeComponent implements OnInit {
   constructor(private _carsService: CarsService) { }
 
   ngOnInit() {
+    // =====================================================================================
+    // Consumes the service to get the cars data  in the data file
     this._carsService.getCars().subscribe( (result: any) => {
       this.cars = result.cars;
     }, error => {

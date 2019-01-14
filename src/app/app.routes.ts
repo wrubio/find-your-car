@@ -4,6 +4,8 @@ import { CarComparatorComponent } from './components/car-comparator/car-comparat
 import { CarComponent } from './components/car/car.component';
 import { SearchComponent } from './components/search/search.component';
 
+// =========================================================
+// Front-end application routes system
 const APP_ROUTES: Routes = [
  { path: 'home', component: HomeComponent },
  { path: 'comparator', component: CarComparatorComponent },
