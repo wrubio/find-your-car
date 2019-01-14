@@ -10,7 +10,9 @@ import { NavbarComponent } from './components/shared/navbar/navbar.component';
 import { CarBrandsComponent } from './components/shared/car-brands/car-brands.component';
 import { CarInputEventComponent } from './components/shared/car-input-event/car-input-event.component';
 import { HomeComponent } from './components/home/home.component';
+import { CarCardsComponent } from './components/car-cards/car-cards.component';
 import { from } from 'rxjs';
+
 
 @NgModule({
   declarations: [
@@ -18,7 +20,8 @@ import { from } from 'rxjs';
     NavbarComponent,
     CarBrandsComponent,
     CarInputEventComponent,
-    HomeComponent
+    HomeComponent,
+    CarCardsComponent
   ],
   imports: [
     BrowserModule,

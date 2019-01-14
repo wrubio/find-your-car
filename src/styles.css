@@ -20,6 +20,18 @@ header {
     color: #FFFFFF !important;
 }
 
+.tc-red {
+    color: #E0202C !important;
+}
+
+.tc-gray-light {
+    color: #ADADAD !important;
+}
+
+.tc-black {
+    color: #2e2e2e !important;
+}
+
 
 /* General Font size style */
 
@@ -33,6 +45,18 @@ header {
 
 .ts-7 {
     font-size: 1.953em;
+}
+
+.ts-6 {
+    font-size: 1.563em;
+}
+
+.ts-5 {
+    font-size: 1.25em;
+}
+
+.ts-4 {
+    font-size: 1em;
 }
 
 
@@ -70,7 +94,14 @@ header {
 }
 
 .bgc-black {
-    background-color: #000000 !important;
+    background-color: #2e2e2e !important;
+}
+
+
+/* HR Border Color */
+
+.hr-white {
+    border-top: 1px solid rgba(255, 255, 255, .65);
 }
 
 
