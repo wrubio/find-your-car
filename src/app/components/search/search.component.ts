@@ -16,13 +16,11 @@ export class SearchComponent implements OnInit {
     this.actRoute.params.subscribe( params => {
       const text = params.brand.toLowerCase();
       this.newCarsArray = [];
-      console.log(text);
       this._carsService.getCars().subscribe( result => {
         this.cars = result.cars;
         for (let car of this.cars) {
           const name = car.brand.toLowerCase();
           if (name.indexOf(text) >= 0) {
-            console.log(name.indexOf(text));
             this.newCarsArray.push(car);
           }
         }

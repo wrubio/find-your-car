@@ -1,39 +1,62 @@
 <div class="card card-comparator">
-    <img class="card-img-top" src="./assets/img/cars/BMW/serie-2/BMW_s2_2018.jpg" alt="BMW Serie 2 2018">
+    <!-- <img class="card-img-top" src="./assets/img/cars/BMW/serie-2/BMW_s2_2018.jpg" alt="BMW Serie 2 2018"> -->
     <div class="card-body">
+
         <div class="dropdown" style="margin-bottom: 15px;">
             <button class="btn btn-secondary dropdown-toggle btn-block btn-brand" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Marca
+              <span class="dropdown-brand" #carBrand>Marca</span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
+                <span class="dropdown-item" (click)="getCarsModel(brandSelected, carBrand)" #brandSelected *ngFor="let brand of brands">{{ brand }}</span>
             </div>
         </div>
+
         <div class="dropdown" style="margin-bottom: 15px;">
             <button class="btn btn-secondary dropdown-toggle btn-block btn-brand" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Modelo
+              <span class="dropdown-model" #carModel>Modelo</span>
             </button>
             <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <a class="dropdown-item" href="#">Action</a>
+                <span class="dropdown-item" *ngFor="let model of models" (click)="searchModel(modelSelected, carModel)" #modelSelected>{{ model }}</span>
             </div>
         </div>
-        <div class="selected-result">
+
+        <div class="selected-result" *ngIf="showInformation">
             <hr>
             <h4>Ficha Técnica</h4>
             <hr>
             <table class="table table-striped">
                 <tbody>
                     <tr>
-                        <th scope="row">1</th>
-                        <td>Mark</td>
+                        <th scope="row" class="tw-bold">Imagen:</th>
+                        <td><img class="card-img-top" [src]="selectedCar[0].mainImg" [alt]="selectedCar[0].brand"></td>
                     </tr>
                     <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
+                        <th scope="row" class="tw-bold">Año:</th>
+                        <td>{{ selectedCar[0].year }}</td>
                     </tr>
                     <tr>
-                        <th scope="row">3</th>
-                        <td>Larry</td>
+                        <th scope="row" class="tw-bold">transmisión:</th>
+                        <td>{{ selectedCar[0].tecnical.transmission }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tw-bold">Traccion:</th>
+                        <td>{{ selectedCar[0].tecnical.traction }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tw-bold">Motor:</th>
+                        <td>{{ selectedCar[0].tecnical.motor }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tw-bold">Frenos ABS:</th>
+                        <td>{{ selectedCar[0].security.absbrake }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tw-bold">Airbag:</th>
+                        <td>{{ selectedCar[0].security.airbag }}</td>
+                    </tr>
+                    <tr>
+                        <th scope="row" class="tw-bold">Alarma:</th>
+                        <td>{{ selectedCar[0].security.alarm }}</td>
                     </tr>
                 </tbody>
             </table>
