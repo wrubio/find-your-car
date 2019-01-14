@@ -9,15 +9,31 @@ import { Router } from '@angular/router';
 export class CarComparatorComponent implements OnInit {
 
   compare: boolean;
+  alert: boolean;
   constructor(private router: Router) {
     this.compare = false;
+    this.alert = false;
   }
 
   ngOnInit() {
   }
 
   showSelected() {
-    this.compare = true;
+    const modelSelectors = Array.prototype.slice.apply(document.querySelectorAll('.dropdown-model'));
+    let modelCount = 0;
+    console.log(modelSelectors);
+    for (let model of modelSelectors) {
+      if (model.innerHTML === 'Modelo') {
+        modelCount++;
+      }
+    }
+    console.log(modelCount);
+    if (modelCount > 1) {
+      this.alert = true;
+    } else {
+      this.compare = true;
+      this.alert = false;
+    }
   }
 
   reloadComponent() {

@@ -10,7 +10,27 @@ import { ActivatedRoute } from '@angular/router';
 export class CarComponent implements OnInit {
 
   cars: any[];
-  car: {};
+  car = {
+    id: 12,
+    brand: '',
+    model: '',
+    year: '',
+    price: '',
+    mainImg: '',
+    img: [],
+    tecnical: {
+        color: '',
+        doors: '',
+        transmission: '',
+        traction: '',
+        motor: ''
+    },
+    security: {
+        absbrake: '',
+        airbag: '',
+        alarm: ''
+    }
+  };
 
   constructor(private _carsService: CarsService, private actRoute: ActivatedRoute ) {
     this._carsService.getCars().subscribe( result => {

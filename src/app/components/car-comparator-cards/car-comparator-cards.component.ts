@@ -20,7 +20,27 @@ export class CarComparatorCardsComponent implements OnInit {
   models: string[] = [];
   cars: any[];
   newCars: any[] = [];
-  selectedCar: any[] = [];
+  selectedCar: any[] = [{
+    id: 12,
+    brand: '',
+    model: '',
+    year: '',
+    price: '',
+    mainImg: '',
+    img: [],
+    tecnical: {
+        color: '',
+        doors: '',
+        transmission: '',
+        traction: '',
+        motor: ''
+    },
+    security: {
+        absbrake: '',
+        airbag: '',
+        alarm: ''
+    }
+  }];
   constructor(private _carsService: CarsService) {}
 
   ngOnInit() {}
