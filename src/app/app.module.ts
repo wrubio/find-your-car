@@ -1,8 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpClientModule } from '@angular/common/http';
 
 // Routes
 import { APP_ROUTING } from './app.routes';
+
+// Services
+import { CarsService } from './services/cars.service';
 
 // Components
 import { AppComponent } from './app.component';
@@ -14,6 +18,8 @@ import { CarCardsComponent } from './components/car-cards/car-cards.component';
 import { CarComparatorComponent } from './components/car-comparator/car-comparator.component';
 import { from } from 'rxjs';
 import { CarComparatorCardsComponent } from './components/car-comparator-cards/car-comparator-cards.component';
+import { FooterComponent } from './components/shared/footer/footer.component';
+
 
 
 @NgModule({
@@ -25,13 +31,15 @@ import { CarComparatorCardsComponent } from './components/car-comparator-cards/c
     HomeComponent,
     CarCardsComponent,
     CarComparatorComponent,
-    CarComparatorCardsComponent
+    CarComparatorCardsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
+    HttpClientModule,
     APP_ROUTING
   ],
-  providers: [],
+  providers: [ CarsService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

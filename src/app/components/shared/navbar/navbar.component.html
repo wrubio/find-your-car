@@ -1,6 +1,31 @@
-<nav class="navbar">
+<nav class="navbar fixed-top navbar-expand-lg bgc-red">
     <a class="navbar-brand tc-white" href="#">
         <img src="./assets/img/header/car_icon.png" width="60" height="30" class="d-inline-block align-top" alt="">
         <span class="brand-text">Find Your Card</span>
     </a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="tc-white"><i class="fa fa-bars" aria-hidden="true"></i></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto order-0">
+            <li class="nav-item active" routerLinkActive="m-active">
+                <a class="nav-link tc-white" [routerLink]="['home']">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item" routerLinkActive="m-active">
+                <a class="nav-link tc-white" [routerLink]="['comparator']">Comparar</a>
+            </li>
+        </ul>
+        <div class=" form-inline my-2 my-lg-0 ">
+            <ul class="navbar-nav mr-auto ">
+                <li class="nav-item active ">
+                    <a class="nav-link tc-white " href="https://www.linkedin.com/in/wrubiorojas "><i class="fa fa-linkedin-square " aria-hidden="true "></i> LinkedIn</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link tc-white " href="https://github.com/wrubio "><i class="fa fa-github-square " aria-hidden="true "></i> GitHub</a>
+                </li>
+            </ul>
+        </div>
+    </div>
 </nav>

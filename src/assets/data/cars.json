@@ -1,0 +1,69 @@
+{
+    "author": "Wilmer A. Rubio Rojas",
+    "year": "2019",
+    "project": "Find yout car",
+    "cars": [{
+            "id": 1,
+            "brand": "BMW",
+            "model": "Serie 2",
+            "year": "2014",
+            "price": 80000000,
+            "mainImg": "./assets/img/cars/BMW/serie-2/BMW_s2_2014_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Azul",
+                "doors": "2",
+                "transmission": "Automática",
+                "traction": "4x2",
+                "motor": "2000 turbo"
+            },
+            "security": {
+                "absbrake": true,
+                "airbag": true,
+                "alarm": true
+            }
+        },
+        {
+            "id": 2,
+            "brand": "BMW",
+            "model": "Serie 3",
+            "year": "2012",
+            "price": 51900000,
+            "mainImg": "./assets/img/cars/BMW/serie-3/BMW_s3_2012_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Gris",
+                "doors": "4",
+                "transmission": "Mecánica",
+                "traction": "4x2",
+                "motor": "2000"
+            },
+            "security": {
+                "absbrake": true,
+                "airbag": true,
+                "alarm": true
+            }
+        },
+        {
+            "id": 3,
+            "brand": "BMW",
+            "model": "X5",
+            "year": "2013",
+            "price": 100000000,
+            "mainImg": "./assets/img/cars/BMW/x5/BMW_x5_2013_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Azul",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x4",
+                "motor": "3000"
+            },
+            "security": {
+                "absbrake": true,
+                "airbag": true,
+                "alarm": true
+            }
+        }
+    ]
+}

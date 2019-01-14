@@ -1,11 +1,11 @@
-<div class="card">
-    <img class="card-img-top" src="./assets/img/cars/BMW/serie-2/BMW_s2_2018.jpg" alt="BMW Serie 2 2018">
+<div class="card" (click)="showCarInformation(car.id)">
+    <img class="card-img-top" [src]="car.mainImg" alt="BMW Serie 2 2018">
     <div class="card-body">
-        <h5 class="tc-white">Marca - modelo</h5>
+        <h5 class="tc-white">{{ car.brand }} - {{ car.model }}</h5>
         <hr class="hr-white">
-        <h6 class="tc-white">fecha</h6>
+        <h6 class="tc-white">{{ car.year }}</h6>
         <div class="mt-5"></div>
-        <div class="price-container tc-white tw-medium ts-5">$45.000</div>
+        <div class="price-container tc-white tw-medium ts-5">{{ car.price | currency:'COP' }} </div>
     </div>
-    <div class="card-cursor-icon tc-black ts-5"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
+    <div class="card-cursor-icon tc-white ts-5"><i class="fa fa-share-alt" aria-hidden="true"></i></div>
 </div>
