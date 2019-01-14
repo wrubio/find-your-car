@@ -9,16 +9,16 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class SearchComponent implements OnInit {
 
-  cars: [];
+  cars: any[];
   newCarsArray = [];
 
   constructor(private _carsService: CarsService, private actRoute: ActivatedRoute) {
     this.actRoute.params.subscribe( params => {
       const text = params.brand.toLowerCase();
       this.newCarsArray = [];
-      this._carsService.getCars().subscribe( result => {
+      this._carsService.getCars().subscribe( (result: any)  => {
         this.cars = result.cars;
-        for (let car of this.cars) {
+        for (const car of this.cars) {
           const name = car.brand.toLowerCase();
           if (name.indexOf(text) >= 0) {
             this.newCarsArray.push(car);

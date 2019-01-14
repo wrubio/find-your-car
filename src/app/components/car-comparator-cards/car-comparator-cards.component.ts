@@ -49,11 +49,12 @@ export class CarComparatorCardsComponent implements OnInit {
   getCarsModel(selected: any, carBrand: any) {
     carBrand.innerHTML = selected.innerHTML;
     const brand: string = selected.innerHTML.toLowerCase();
-    this._carsService.getCars().subscribe( result => {
+    this._carsService.getCars().subscribe( (result: any)  => {
+      console.log(result);
       this.cars = result.cars;
       this.models = [];
           this.newCars = [];
-      for (let car of this.cars) {
+      for (const car of this.cars) {
         const name = car.brand.toLowerCase();
         if (name.indexOf(brand) >= 0) {
           this.models.push(car.model);
@@ -69,9 +70,9 @@ export class CarComparatorCardsComponent implements OnInit {
     carModel.innerHTML = selected.innerHTML;
     const model: string = selected.innerHTML.toLowerCase();
     this.selectedCar = [];
-    for (let car of this.newCars) {
-      const carModel = car.model.toLowerCase();
-      if ( carModel.indexOf(model) >= 0) {
+    for (const car of this.newCars) {
+      const carModelText = car.model.toLowerCase();
+      if ( carModelText.indexOf(model) >= 0) {
         this.selectedCar.push(car);
       }
     }

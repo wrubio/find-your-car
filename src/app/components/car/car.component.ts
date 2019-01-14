@@ -33,7 +33,7 @@ export class CarComponent implements OnInit {
   };
 
   constructor(private _carsService: CarsService, private actRoute: ActivatedRoute ) {
-    this._carsService.getCars().subscribe( result => {
+    this._carsService.getCars().subscribe( (result: any)  => {
       this.cars = result.cars;
       this.actRoute.params.subscribe( params => {
         this.car = this.cars.find(x => x.id === parseInt(params.id, 10));

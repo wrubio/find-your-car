@@ -7,7 +7,6 @@ body {
 
 header {
     width: 100%;
-    height: 420px;
     background-color: #E0202C;
     position: relative;
     padding: 15px 25px;
@@ -15,12 +14,19 @@ header {
 
 footer {
     width: 100%;
-    height: 120px;
     padding: 25px;
 }
 
 .m-active {
     border-bottom: 1px solid #FFFFFF;
+}
+
+.anio {
+    text-align: center;
+}
+
+.footer-logo {
+    text-align: center;
 }
 
 
@@ -159,6 +165,19 @@ footer {
     .car-brand-container {
         display: block;
     }
+    header {
+        width: 100%;
+        height: 320px;
+        background-color: #E0202C;
+        position: relative;
+        padding: 15px 25px;
+    }
+    .anio {
+        text-align: right;
+    }
+    footer-logo {
+        text-align: left;
+    }
 }
 
 
@@ -168,6 +187,19 @@ footer {
     .car-brand-container {
         display: block;
     }
+    header {
+        width: 100%;
+        height: 380px;
+        background-color: #E0202C;
+        position: relative;
+        padding: 15px 25px;
+    }
+    .anio {
+        text-align: right;
+    }
+    footer-logo {
+        text-align: left;
+    }
 }
 
 
@@ -176,6 +208,19 @@ footer {
 @media (min-width: 1200px) {
     .car-brand-container {
         display: block;
+    }
+    header {
+        width: 100%;
+        height: 520px;
+        background-color: #E0202C;
+        position: relative;
+        padding: 15px 25px;
+    }
+    .anio {
+        text-align: right;
+    }
+    .footer-logo {
+        text-align: left;
     }
 }
 

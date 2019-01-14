@@ -11,3 +11,12 @@
     padding: 25px;
     margin-top: 50px;
 }
+
+.showbar-continer {
+    width: 100%;
+    text-align: center;
+}
+
+.showbar-continer img {
+    width: 60%;
+}
