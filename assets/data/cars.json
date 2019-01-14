@@ -253,6 +253,90 @@
                 "airbag": "Si",
                 "alarm": "Si"
             }
+        },
+        {
+            "id": 13,
+            "brand": "Ford",
+            "model": "Fiesta",
+            "year": "2011",
+            "price": 24900000,
+            "mainImg": "./assets/img/cars/Ford/fiesta/ford_fiesta_2011_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Negro",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x2",
+                "motor": "1600"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "No hay información"
+            }
+        },
+        {
+            "id": 14,
+            "brand": "Ford",
+            "model": "Focus",
+            "year": "2015",
+            "price": 37000000,
+            "mainImg": "./assets/img/cars/Ford/focus/ford_focus_2015_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Gris",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x2",
+                "motor": "2000"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
+        },
+        {
+            "id": 15,
+            "brand": "Mazda",
+            "model": "Mazda 6",
+            "year": "2006",
+            "price": 17500000,
+            "mainImg": "./assets/img/cars/Mazda/mazda6/mazda_6_2006_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Gris",
+                "doors": "4",
+                "transmission": "Mecánica",
+                "traction": "4x2",
+                "motor": "2000"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
+        },
+        {
+            "id": 16,
+            "brand": "Mazda",
+            "model": "CX 5",
+            "year": "2015",
+            "price": 73900000,
+            "mainImg": "./assets/img/cars/Mazda/cx5/mazda_cx5_2015_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Gris",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x4",
+                "motor": "2500"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
         }
     ]
 }
