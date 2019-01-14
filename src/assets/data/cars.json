@@ -18,9 +18,9 @@
                 "motor": "2000 turbo"
             },
             "security": {
-                "absbrake": true,
-                "airbag": true,
-                "alarm": true
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
             }
         },
         {
@@ -39,9 +39,9 @@
                 "motor": "2000"
             },
             "security": {
-                "absbrake": true,
-                "airbag": true,
-                "alarm": true
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
             }
         },
         {
@@ -60,9 +60,9 @@
                 "motor": "3000"
             },
             "security": {
-                "absbrake": true,
-                "airbag": true,
-                "alarm": true
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
             }
         }
     ]

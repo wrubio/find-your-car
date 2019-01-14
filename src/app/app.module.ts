@@ -19,6 +19,7 @@ import { CarComparatorComponent } from './components/car-comparator/car-comparat
 import { from } from 'rxjs';
 import { CarComparatorCardsComponent } from './components/car-comparator-cards/car-comparator-cards.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
+import { CarComponent } from './components/car/car.component';
 
 
 
@@ -32,7 +33,8 @@ import { FooterComponent } from './components/shared/footer/footer.component';
     CarCardsComponent,
     CarComparatorComponent,
     CarComparatorCardsComponent,
-    FooterComponent
+    FooterComponent,
+    CarComponent
   ],
   imports: [
     BrowserModule,

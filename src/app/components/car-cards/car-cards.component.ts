@@ -12,9 +12,7 @@ export class CarCardsComponent implements OnInit {
 
   constructor( private router: Router ) { }
 
-  ngOnInit() {
-    console.log(this.car);
-  }
+  ngOnInit() {}
 
   showCarInformation(id: number) {
     this.router.navigate(['/car', id]);
