@@ -105,6 +105,23 @@ header {
 }
 
 
+/* general col- class styles */
+
+.border-between>[class*='col-']:before {
+    background: #e3e3e3;
+    bottom: 0;
+    content: " ";
+    left: 0;
+    position: absolute;
+    width: 1px;
+    top: 0;
+}
+
+.border-between>[class*='col-']:first-child:before {
+    display: none;
+}
+
+
 /* ==========================================================================================
     Responsive breakpoints 
 */
@@ -150,4 +167,34 @@ header {
     .car-brand-container {
         display: block;
     }
+}
+
+
+/* Define Animation  */
+
+.animated {
+    -webkit-animation-duration: 0.6s;
+    animation-duration: 0.6s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+.fast {
+    -webkit-animation-duration: 0.4s;
+    animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
 }
