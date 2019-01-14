@@ -16,4 +16,8 @@ export class CarInputEventComponent implements OnInit {
   showComparator() {
     this.router.navigate(['comparator']);
   }
+
+  findBrand( term: string) {
+    this.router.navigate(['/search', term]);
+  }
 }

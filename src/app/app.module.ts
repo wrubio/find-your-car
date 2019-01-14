@@ -20,6 +20,7 @@ import { from } from 'rxjs';
 import { CarComparatorCardsComponent } from './components/car-comparator-cards/car-comparator-cards.component';
 import { FooterComponent } from './components/shared/footer/footer.component';
 import { CarComponent } from './components/car/car.component';
+import { SearchComponent } from './components/search/search.component';
 
 
 
@@ -34,7 +35,8 @@ import { CarComponent } from './components/car/car.component';
     CarComparatorComponent,
     CarComparatorCardsComponent,
     FooterComponent,
-    CarComponent
+    CarComponent,
+    SearchComponent
   ],
   imports: [
     BrowserModule,

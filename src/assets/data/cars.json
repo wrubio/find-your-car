@@ -64,6 +64,195 @@
                 "airbag": "Si",
                 "alarm": "Si"
             }
+        },
+        {
+            "id": 4,
+            "brand": "Audi",
+            "model": "Q5",
+            "year": "2014",
+            "price": 81900000,
+            "mainImg": "./assets/img/cars/Audi/q5/audi_q5_2014_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Blanco",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x2",
+                "motor": "2000"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
+        },
+        {
+            "id": 5,
+            "brand": "Audi",
+            "model": "Q8",
+            "year": "2019",
+            "price": 269900000,
+            "mainImg": "./assets/img/cars/Audi/q8/audi_q8_2019_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Azul",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x4",
+                "motor": "3000"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "No hay información"
+            }
+        },
+        {
+            "id": 6,
+            "brand": "Audi",
+            "model": "A3",
+            "year": "2015",
+            "price": 63000000,
+            "mainImg": "./assets/img/cars/Audi/a3/audi_a3_2015_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Rojo",
+                "doors": "4",
+                "transmission": "Mecánica",
+                "traction": "4x2",
+                "motor": "1800"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
+        },
+        {
+            "id": 7,
+            "brand": "Chevrolet",
+            "model": "Cruze",
+            "year": "2011",
+            "price": 27800000,
+            "mainImg": "./assets/img/cars/Chevrolet/cruze/chevrolet_cruze_2011_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Gris",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x2",
+                "motor": "1800"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
+        },
+        {
+            "id": 8,
+            "brand": "Chevrolet",
+            "model": "Captiva",
+            "year": "2010",
+            "price": 25900000,
+            "mainImg": "./assets/img/cars/Chevrolet/captiva/chevrolet_captiva_2010_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Azul",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x4",
+                "motor": "3600"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "No hay información"
+            }
+        },
+        {
+            "id": 9,
+            "brand": "Chevrolet",
+            "model": "Spark GT",
+            "year": "2014",
+            "price": 23900000,
+            "mainImg": "./assets/img/cars/Chevrolet/spark/chevrolet_spark_2014_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Gris",
+                "doors": "2",
+                "transmission": "Mecánica",
+                "traction": "4x2",
+                "motor": "1200"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
+        },
+        {
+            "id": 10,
+            "brand": "Nissan",
+            "model": "Murano",
+            "year": "2018",
+            "price": 112000000,
+            "mainImg": "./assets/img/cars/Nissan/murano/nissan_murano_2018_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Negro",
+                "doors": "4",
+                "transmission": "Automática",
+                "traction": "4x4",
+                "motor": "V6"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
+        },
+        {
+            "id": 11,
+            "brand": "Nissan",
+            "model": "Tiida",
+            "year": "2010",
+            "price": 23500000,
+            "mainImg": "./assets/img/cars/Nissan/tiida/nissan_tiida_2010_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Beige",
+                "doors": "4",
+                "transmission": "Mecánica",
+                "traction": "4x2",
+                "motor": "1800"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
+        },
+        {
+            "id": 12,
+            "brand": "Nissan",
+            "model": "March",
+            "year": "2016",
+            "price": 26900000,
+            "mainImg": "./assets/img/cars/Nissan/March/nissan_march_2016_01.png",
+            "img": [],
+            "tecnical": {
+                "color": "Gris",
+                "doors": "4",
+                "transmission": "Mecánica",
+                "traction": "4x2",
+                "motor": "1600"
+            },
+            "security": {
+                "absbrake": "Si",
+                "airbag": "Si",
+                "alarm": "Si"
+            }
         }
     ]
 }
